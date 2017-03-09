@@ -1,11 +1,10 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import numpy as np
-import matplotlib.pyplot as plt
-import os
 import cPickle
 import copy
+
+import numpy as np
 
 from scipy.special import erf
 from scipy.integrate import romb, romberg
@@ -21,7 +20,6 @@ from astropy.utils.console import ProgressBar
 from collections import OrderedDict as odict
 
 import sncosmo
-from sncosmo.models import Source
 
 import warnings
 
