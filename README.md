@@ -9,7 +9,7 @@ source = sncosmo.TimeSeriesSource(phase, wave, flux)
 model = sncosmo.Model(source=source)
 ```
 
-For rate calculation you can us the `RateCalculator` class in `rates.py`:
+For rate calculations you can use the `RateCalculator` class in `rates.py`:
 
 ```python
 ratecalc = rates.RateCalculator(model, band='sdssg', ratefunc=lambda z: 3e-7)
