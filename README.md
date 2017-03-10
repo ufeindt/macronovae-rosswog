@@ -12,6 +12,7 @@ model = sncosmo.Model(source=source)
 For rate calculations you can use the `RateCalculator` class in `rates.py`:
 
 ```python
+import rates
 ratecalc = rates.RateCalculator(model, band='sdssg', ratefunc=lambda z: 3e-7)
 
 n_exp = ratecalc.get_n_expected(21)
