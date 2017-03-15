@@ -255,7 +255,7 @@ def find_peak_phase_mag(model, band, magsys='ab', p_init=None, sampling=1.):
     def _fct_min(p):
         return -model.bandflux(band, p[0], 30, magsys)
          
-    res = minimize(_fct_min, [p_init], bounds=[(model.mintime(), model.maxtime())])
+    res = minimize(_fct_min, [p_init])
         
     return res.x[0], -2.5 * np.log10(-res.fun) + 30
     
