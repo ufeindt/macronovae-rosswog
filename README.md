@@ -26,7 +26,7 @@ The SED file format is the following:
 
 The models can be identified from the file names in the following way:
 * Dynamic ejecta models for NSNS mergers are named according to the NS masses, i.e. ns12n14 stands for 1.2 and 1.4 M_sun.
-* Dynamic ejecta models for NSBH mergers are numbered according to Table Y in the paper.
-* Wind models are numbered according as in Table X of the paper.
+* Dynamic ejecta models for NSBH mergers are numbered according to Table 1 in the paper.
+* Wind models are numbered according as in Table 2 of the paper.
 * If no nuclear mass model (FRDM or DZ31) is stated in the file name, MNmodel1 with FRDM was used. Otherwise it is MNmodel2 with the stated nuclear mass model.
 * Some file names contain a string indicating the opacity, e.g. kappa10 for an opacity of 10 cm^2 g^-1. If the opacity is not stated, it is 10 cm^2 g^-1 for dynamic ejecta and 1 cm^2 g^-1 for winds.
