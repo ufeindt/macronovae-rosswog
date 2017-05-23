@@ -1,3 +1,16 @@
+# Dynamic ejecta NS-NS merger
+# MNmodel1 FRDM1
+# kappa = 10 cm^2 g^-1
+# m_1 = 1.2 M_sun
+# m_2 = 1.2 M_sun
+# m_ej = 0.0079 M_sun
+# v_ej = 0.12 c
+#
+# Columns
+# 1) time since merger [days]
+# 2) wavelength [Å]
+# 3) flux [erg s^-1 cm^-2 Å^-1]
+#
 0.5 1000 6.794242e-10
 0.5 1010 8.241477e-10
 0.5 1020 9.954374e-10

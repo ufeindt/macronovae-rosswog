@@ -1,3 +1,15 @@
+# Wind model
+# MNmodel1 FRDM
+# kappa = 1 cm^2 g^-1
+# m_w = 0.05 M_sun
+# v_w = 0.25 c
+# Y_e = 0.25
+#
+# Columns
+# 1) time since merger [days]
+# 2) wavelength [Å]
+# 3) flux [erg s^-1 cm^-2 Å^-1]
+#
 0.5 1000 0.008714381
 0.5 1010 0.008809106
 0.5 1020 0.008898729

@@ -1,3 +1,17 @@
+# Dynamic ejecta NS-BH merger
+# MNmodel1 FRDM
+# kappa = 10 cm^2 g^-1
+# m_ns = 1.4 M_sun
+# m_bh = 7.0 M_sun
+# chi = 0.7
+# m_ej = 0.04 M_sun
+# v_ej = 0.2 c
+#
+# Columns
+# 1) time since merger [days]
+# 2) wavelength [Å]
+# 3) flux [erg s^-1 cm^-2 Å^-1]
+#
 0.5 1000 8.111579e-14
 0.5 1010 1.09854e-13
 0.5 1020 1.478198e-13
