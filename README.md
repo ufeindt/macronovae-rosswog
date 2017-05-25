@@ -9,6 +9,13 @@ source = sncosmo.TimeSeriesSource(phase, wave, flux)
 model = sncosmo.Model(source=source)
 ```
 
+The SEDs are scaled to 10 pc distance and thus leaving the model's `amplitude` parameter at the default value of 1 means that `model.bandmag()` will return absolute magnitude. To place the macronova at cosmological distances, divide the `amplitude` by the square of the luminosity distance:
+```python
+from astropy.cosmology import Planck15
+
+model.set(z=0.1, amplitdue=1./Planck15.luminosity_distance(0.1).value**2)
+```
+
 For rate calculations you can use the `RateCalculator` class in `rates.py`:
 
 ```python
@@ -24,7 +31,7 @@ The SED file format is the following:
 * column 2: wavelength [Å]
 * column 3: flux [erg s^-1 cm^-2 Å^-1]. 
 
-The models can be identified from the file names in the following way:
+Each file has a header with the model parameters but the models can also be identified from the file names in the following way:
 * Dynamic ejecta models for NSNS mergers are named according to the NS masses, i.e. ns12n14 stands for 1.2 and 1.4 M_sun.
 * Dynamic ejecta models for NSBH mergers are numbered according to Table 1 in the paper.
 * Wind models are numbered according as in Table 2 of the paper.
